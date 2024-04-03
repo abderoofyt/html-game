@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper vs Scissors</h1>
+    </header>
+    <div class="container">
+        <div class="scores">
+            <p>Computer : 
+                <span id="computer_score">0</span>
+            </p>
+            <p>
+                You :
+                <span id="user_score">0</span>
+            </p>
+        </div>
+        <div id="weapon_buttons" class="weapons">
+            <button id="rock_btn" onclick="chooseWeapon('rock')" class="animated-button">
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button id="paper_btn" onclick="chooseWeapon('paper')" class="animated-button">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button id="scissor_btn" onclick="chooseWeapon('scissor')" class="animated-button">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
+    
+        <div class="battle hidden">
+            <div id="user_choice" class="choice"></div>
+            <div id="computer_choice" class="choice"></div>
+        </div>
+    
+        <div class="details">
+            <p id="user_choice_text"></p>
+            <p id="comp_choice_text"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

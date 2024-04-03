@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
+    <title>Hangman</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Please select a level to start the game.</h2>
+
+            <div id="levelSelection">
+                <p>Select a level:</p>
+                <form id="levelForm">
+                    <label><input type="radio" name="level" value="1"> Level 1</label><br>
+                    <label><input type="radio" name="level" value="2"> Level 2</label><br>
+                    <label><input type="radio" name="level" value="3"> Level 3</label><br>
+                    <label><input type="radio" name="level" value="4"> Level 4</label><br>
+                    <label><input type="radio" name="level" value="5"> Level 5</label><br>
+                    <button type="button" onclick="startGame()">Start Game</button>
+                </form>
+            </div>
+
+            <div id="idResult"></div> 
+
+            <!-- Remaining game elements -->
+            <!-- Include canvas, wrong guesses, and letter buttons here -->
+
+        </article>
+    </section>
+    <script src="js.js"></script>
+    <script>
+        function startGame() {
+            var levelForm = document.getElementById("levelForm");
+            var selectedLevel = levelForm.querySelector('input[name="level"]:checked');
+    
+            if (selectedLevel) {
+                var level = selectedLevel.value;
+                var url = "game.html?level=" + level; // Construct the URL with the selected level
+                window.location.href = url; // Redirect to the new page
+            } else {
+                alert("Please select a level to start the game.");
+            }
+        }
+    </script>
+</body>
+</html>

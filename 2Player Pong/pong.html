@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2Player Pong </title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #game-container {
+      text-align: center;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    canvas {
+      border: 1px solid white;
+    }
+
+    #scoreboard {
+      color: white;
+      margin-top: 20px;
+    }
+
+    #player1-score, #player2-score {
+      margin-right: 20px;
+    }
+
+    .dotted-line {
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <h1>2Player Pong</h1>
+    <canvas id="game" width="650" height="485"></canvas>
+    <div id="scoreboard">
+      <span id="player1-score">Player 1: 0</span>
+      <span id="player2-score">Player 2: 0</span>
+    </div>
+  </div>
+  
+  <script src="pong.js"></script>
+</body>
+</html>
