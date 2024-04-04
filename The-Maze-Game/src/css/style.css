@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: calc(72vh); /* 20% smaller than the previous viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+    font-size: 64%; /* Reduce font size by 20% (80% - 20%) */
+}
+
+header {
+    text-align: center;
+    margin-top: 40px; /* 20% reduction */
+    margin-bottom: 16px; /* 20% reduction */
+}
+
+h1 {
+    font-size: 22.4px; /* 20% reduction */
+    margin-bottom: 8px; /* 20% reduction */
+}
+
+p {
+    font-size: 11.2px; /* 20% reduction */
+    margin-bottom: 16px; /* 20% reduction */
+}
+
+.game-container {
+    margin-top: 40px; /* 20% reduction */
+    padding: 0 16px; /* 20% reduction */
+}
+
+.difficulty-levels button,
+.controls button,
+#regenerateMaze,
+#aboutGame {
+    font-size: 11.2px; /* 20% reduction */
+    padding: 6.4px 12.8px; /* 20% reduction */
+}
+
+#mazeCanvas {
+    border-width: 2.4px; /* 20% reduction */
+}
+
+body {
+    font-size: 70%; /* Reduce font size by 20% (100% - 20%) */
+}
+
+h1 {
+    font-size: 28px; /* Reduce font size by 25% */
+}
+
+p {
+    font-size: 14px; /* Reduce font size by 25% */
+}
+
+.difficulty-levels button,
+.controls button,
+#regenerateMaze,
+#aboutGame {
+    font-size: 14px; /* Reduce button font size by 25% */
+    padding: 8px 16px; /* Reduce button padding by 25% */
+}
+
+#mazeCanvas {
+    border-width: 3px; /* Reduce border width by 40% (5px to 3px) */
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+strong {
+    color: #666; /* Adjust color for strong element */
+}
+
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.button-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Adjust top margin */
+}
+
+.difficulty-levels {
+    display: flex;
+    flex-direction: column; /* Display buttons vertically */
+}
+
+.difficulty-levels button {
+    margin-bottom: 10px; /* Add margin between buttons */
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 11.2px; /* Decrease button font size */
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.difficulty-levels button:hover {
+    transform: scale(1.05);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls button {
+    margin-bottom: 10px; /* Adjust margin */
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 18px; /* Decrease button font size */
+    background-color: #66ccff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+}
+
+
+#mazeCanvas {
+    border: 5px solid #333;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Ensure canvas does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+#regenerateMaze,
+#aboutGame {
+    margin-top: 20px; /* Adjust top margin */
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 18px; /* Decrease button font size */
+    background-color: #ff6666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block; /* Ensure the buttons are displayed inline-block */
+    margin-right: 10px; /* Add some space between the buttons */
+}
+
+#regenerateMaze:hover,
+#aboutGame:hover {
+    transform: scale(1.05);
+}
