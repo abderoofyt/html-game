@@ -249,6 +249,8 @@ function genMaze(x, y) {
     solutionPath = solveMaze();
 }
 
+
+
 function resetPlayerPos() { 
 	player1.x = 0; 
 	player1.y = 0; 
